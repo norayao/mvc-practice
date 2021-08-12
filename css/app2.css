@@ -1,0 +1,22 @@
+.title{
+    display: flex;
+}
+.title > li {
+    border: 1px solid grey;
+    border-radius: 2px;
+    width: 20%;
+    margin-left: 5px;
+    padding-left: 3px;
+}
+.title > li.selected {
+    background: rgb(253, 221, 155);
+    color: white;
+}
+
+.content > li {
+    display: none;
+    margin: 5px 5px;
+}
+.content > li.active {
+    display: block;
+}

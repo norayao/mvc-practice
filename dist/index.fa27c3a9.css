@@ -1,0 +1,85 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*:before, *:after{
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+
+
+body{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+#app1, #app2, #app3, #app4{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid grey;
+    padding: 10px 10px;
+}
+
+#app1{
+    height: 50vh;
+    width: 50vw;
+}
+#output {
+    margin-bottom: 5px;
+}
+.title{
+    display: flex;
+}
+.title > li {
+    border: 1px solid grey;
+    border-radius: 2px;
+    width: 20%;
+    margin-left: 5px;
+    padding-left: 3px;
+}
+.title > li.selected {
+    background: rgb(253, 221, 155);
+    color: white;
+}
+
+.content > li {
+    display: none;
+    margin: 5px 5px;
+}
+.content > li.active {
+    display: block;
+}
+.figure{
+    border: 1px solid grey;
+    margin-top: 10vw;
+    margin-left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    transition: transform 1s;
+}
+.figure.active{
+    transform:translateX(15vw);
+}
+@keyframes change {
+    0% {
+        background: red;
+    }
+    100% {
+        background: blue;
+    }
+}
+#app4 .circle {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+#app4 .circle.active{
+    animation: change 1s infinite alternate linear;
+}
+/*# sourceMappingURL=index.fa27c3a9.css.map */
